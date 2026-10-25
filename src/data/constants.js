@@ -11,8 +11,8 @@ export const PORTFOLIO_DATA = {
   },
   about: {
     title: "TENTANG SAYA",
-    description: "Saya adalah mahasiswa Teknik Informatika yang berfokus merancang produk digital fungsional dan efisien. Saya terbiasa menjembatani ketelitian logika backend dengan antarmuka frontend yang dinamis, bertujuan untuk menciptakan sistem web yang andal, mulai dari portal komunitas hingga sistem Point of Sale.",
-    image: "/foto-profil.jpg" 
+    description: "Fullstack web developer dan mahasiswa Teknik Informatika dengan fokus pada sistem yang praktis dan mudah dirawat. Pengalamanku mencakup aplikasi web berbasis Laravel dan React, sistem Point of Sale, serta otomasi dengan Node.js. Aku terbiasa mengerjakan proyek dari analisis kebutuhan sampai deployment, dan terbuka untuk kolaborasi maupun peluang magang.",
+    image: "/public/profil.png" 
   },
   projects: [
     {

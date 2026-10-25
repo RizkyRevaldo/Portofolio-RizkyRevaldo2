@@ -1,5 +1,6 @@
 // src/App.jsx
 import React, { useState } from 'react';
+import './index.css';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Import Komponen

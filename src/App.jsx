@@ -1,7 +1,7 @@
 // src/App.jsx
 import React, { useState } from 'react';
-import './index.css';
 import { motion, AnimatePresence } from 'framer-motion';
+import { ReactLenis } from 'lenis/react'; // Import Lenis
 
 // Import Komponen
 import Intro from './components/Intro';
@@ -12,7 +12,6 @@ import ProjectShowcase from './components/ProjectShowcase';
 import Expertise from './components/Expertise';
 import Contact from './components/Contact';
 
-// Konstanta Animasi Global
 const ease = [0.16, 1, 0.3, 1];
 
 const GlobalStyles = () => (
@@ -49,7 +48,8 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
-    <>
+    // Bungkus dengan ReactLenis untuk mengaktifkan Smooth Scroll
+    <ReactLenis root options={{ lerp: 0.05, smoothWheel: true }}>
       <GlobalStyles />
       <AnimatePresence mode="wait">
         {isLoading ? (
@@ -71,6 +71,6 @@ export default function App() {
           </motion.main>
         )}
       </AnimatePresence>
-    </>
+    </ReactLenis>
   );
 }
